@@ -18,12 +18,15 @@ sh init-pico.sh
 
 檢查 docker container 狀態
 ```
+
+docker ps
+
 CONTAINER ID   IMAGE                    COMMAND                  CREATED         STATUS                 PORTS                                       NAMES
 057522082cf1   picocms-docker_picocms   "docker-php-entrypoi…"   5 seconds ago   Up 2 seconds           0.0.0.0:10888->80/tcp, :::10888->80/tcp     picocms
 
 ```
 
-瀏覽到 http://<IP>:10888
+瀏覽到 http://[IP]:10888
 
 結束 container
 ```
