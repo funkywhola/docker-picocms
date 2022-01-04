@@ -1,0 +1,12 @@
+---
+version: '2'
+services:
+  picocms:
+    build:
+      context: php
+    container_name: picocms
+    volumes:
+      - ./data:/var/www/html
+    ports:
+      - 10888:80
+    restart: unless-stopped
